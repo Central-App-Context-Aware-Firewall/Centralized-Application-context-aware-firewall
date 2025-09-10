@@ -1,4 +1,3 @@
-version: "3.8"
 services:
   mongodb:
     image: mongo:latest
@@ -27,7 +26,7 @@ services:
 
   web-console:
     build:
-      context: ./Frontend/Centarlized Firewall Web Console
+      context: ./Frontend_Web_Console
       dockerfile: dockerfile
     container_name: web-console
     ports:
