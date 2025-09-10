@@ -3,10 +3,10 @@ FROM node:20-alpine
 WORKDIR /app
 
 COPY package.json package-lock.json ./
-COPY .env ./
-COPY src/ ./src/
-
 RUN npm install
+
+COPY src/ ./src/
+COPY .env* ./
 
 EXPOSE 5000
 
